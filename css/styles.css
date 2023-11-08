@@ -1,0 +1,224 @@
+/* #FCAA67 - Sandy Brown */
+/* #B0413E - Redwood */
+/* #FFFFC7 - Cream */
+/* #548687 - Dark Cyan */
+/* #473335 - Van Dyke */
+/* #581F18 Caput Mortuum */
+
+/* Global Styles 
+-------------------------------*/
+html {
+    box-sizing: border-box;
+}
+
+/* Psuedo Element */
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Inclusive Sans', sans-serif;
+    margin: 0;
+}
+
+h1, h2 {
+    font-family: 'Gideon Roman', cursive;
+}
+
+h1{
+    font-size: 45px;
+}
+
+h2{
+    font-size: 35px;
+}
+a{
+    color: #f5999f;
+}
+a:hover{
+    text-decoration: none;
+}
+
+/* img {  
+    float: right;
+    max-width: 20%;  
+    height: auto;  
+    border: 5px solid #671919;
+} */
+
+.content {
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 45px;
+}
+
+.padding{
+    padding: 25px;
+}
+
+.pad{
+    padding-bottom: 20px;
+}
+
+/* Header and Footer
+-------------------------------*/
+header, footer{
+    background: #B0413E;
+    color: #581F18;
+}
+header h1, header h2{
+    color: #FFFFC7;
+}
+
+/* Psuedo Element */
+header h1::after {
+    content: " 💻💻💻";
+}
+
+header p {
+    color: #FFFFC7;
+}
+
+footer {
+    clear: both;
+    text-align: center;
+}
+
+.links, a {
+    margin: 10px;
+    padding: 10px;
+}
+
+footer h2 {
+    display:inline-block; 
+    background: rgba(241, 59, 53, 0.25);
+}
+
+/* Work Experience
+-------------------------------*/
+.work{
+    background: #FFFFC7;
+    line-height: 20px;
+}
+
+.work h2 {
+    font-family: bolder;
+}
+
+/* Combinator */
+.work h3 ~ p {
+    font-weight: bold;
+    color: #FCAA67;
+}
+
+.work h3 ~ ul {
+    color: #FCAA67;
+    padding-bottom: px;
+}
+
+/* Psuedo Class */
+.work :nth-child(even){
+    color: #9c6334;
+}
+
+
+
+/* Education
+-------------------------------*/
+.education{
+    background: #FCAA67;
+    overflow: auto;
+}
+
+.education h2 {
+    font-weight: bolder;
+}
+
+/* Navigation
+-------------------------------*/
+nav {
+    text-align: center;
+    position: fixed;
+    background: #B0413E;
+}
+
+nav a {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    transition: 0.5s;
+}
+
+nav a:hover{
+    color: white;
+    transform: scale(1.2);
+}
+
+/* Media Queries 
+-------------------------------*/
+/* Phones */
+@media (max-width: 767px) {
+    img {  
+        display: none
+    }
+}
+  
+/* Tablets */
+@media (min-width: 767px) and (max-width: 1023px) {
+    img {  
+        float: right;
+        max-width: 20%;  
+        height: auto;  
+        border: 5px solid #671919;
+    }
+}
+
+/* Laptops */
+@media (min-width: 1024px) {
+    img {  
+        float: right;
+        max-width: 20%;  
+        height: auto;  
+        border: 5px solid #671919;
+    }
+}
+
+@media (min-width: 650px){
+    .col1 {
+        width: 50%;
+        float: left;
+    }
+    
+    .col2 {
+        width: 50%;
+        float: left;
+    }
+}
+
+@media (max-width: 544px){
+    nav{
+        display: none;
+    }
+}
+
+/* Animation 
+-------------------------------*/
+@keyframes popUp{
+    0% {transform: scale(0);}
+    100% {transform: scale(1);}
+}
+
+#home h2 {
+    animation-name: popUp;
+    animation-duration: 1.5s;
+}
+
+#home h1 {
+    animation-name: popUp;
+    animation-duration: 1.5s;
+}
+#home p {
+    animation-name: popUp;
+    animation-duration: 1.5s;
+}
