@@ -113,7 +113,6 @@ footer h2 {
 
 .work h3 ~ ul {
     color: #FCAA67;
-    padding-bottom: px;
 }
 
 /* Psuedo Class */
@@ -191,6 +190,11 @@ nav a:hover{
     }
     
     .col2 {
+        width: 50%;
+        float: left;
+    }
+
+    .col2 li{
         width: 50%;
         float: left;
     }
